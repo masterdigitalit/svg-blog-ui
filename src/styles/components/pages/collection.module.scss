@@ -1,0 +1,180 @@
+.collection {
+	.title {
+		font-size: 22px;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		font-weight: 600;
+
+	}
+
+	.info-title {
+
+		align-items: start;
+		font-size: 18px;
+		display: flex;
+		justify-content: flex-start;
+		text-align: start;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+	.collection {
+		padding: 10px 20px;
+
+
+
+		.items {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(6, calc(16.6% - 8.3px));
+			column-gap: 10px;
+			row-gap: 15px;
+
+
+			.item {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-content: center;
+
+
+
+				img {
+					padding: 10px;
+					width: 70%;
+					box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .05);
+
+				}
+
+				.action {
+					padding: 2px;
+					margin-top: 5px;
+					width: 70%;
+					display: flex;
+					justify-content: space-between;
+
+					svg:hover {
+						transform: scale(1.1);
+						stroke: #6b9bd2;
+						opacity: 1;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	.collection {
+		padding: 10px 20px;
+
+
+
+		.items {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, calc(25% - 7.5px));
+			column-gap: 10px;
+			row-gap: 15px;
+
+
+			.item {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-content: center;
+
+
+
+				img {
+					padding: 10px;
+					width: 80%;
+					box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .05);
+
+				}
+
+				.action {
+					padding: 2px;
+					margin-top: 5px;
+					width: 80%;
+					display: flex;
+					justify-content: space-between;
+
+					svg:hover {
+						transform: scale(1.1);
+						stroke: #6b9bd2;
+						opacity: 1;
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 499px) {
+	.collection {
+		padding: 10px 20px;
+
+
+
+		.items {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, calc(33% - 6.6px));
+			column-gap: 10px;
+			row-gap: 15px;
+
+
+			.item {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-content: center;
+
+
+
+				img {
+					padding: 10px;
+					width: 80%;
+					box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .05);
+
+				}
+
+				.action {
+					padding: 2px;
+					margin-top: 5px;
+					width: 80%;
+					display: flex;
+					justify-content: space-between;
+
+					svg:hover {
+						transform: scale(1.1);
+						stroke: #6b9bd2;
+						opacity: 1;
+					}
+				}
+
+			}
+		}
+	}
+
+}

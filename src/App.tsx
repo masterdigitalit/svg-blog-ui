@@ -2,12 +2,17 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/widgets/Header";
 import Home from "./components/pages/Home/Home";
-import './App.css'
+import "./App.css";
 import Search from "./components/elements/Search";
+import CollectionRouter from "./routers/Collection.router";
 
 function App() {
 	return (
 		<div className="App">
+			<CollectionRouter>
+				<Header />
+				<Search />
+			</CollectionRouter>
 			<Routes>
 				{/* <Route path="/camera" element={ <><Camera /></> } /> */}
 
@@ -15,8 +20,9 @@ function App() {
 					path="/"
 					element={
 						<>
-							<Header /> <Home >
-								<Search/>
+							<Header />
+							<Home>
+								<Search />
 							</Home>
 						</>
 					}

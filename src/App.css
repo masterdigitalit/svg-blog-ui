@@ -35,3 +35,9 @@ a{
     transform: rotate(360deg);
   }
 }
+
+
+
+@media (min-width: 1024px) and (max-width: 1600px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (max-width: 767px) {}

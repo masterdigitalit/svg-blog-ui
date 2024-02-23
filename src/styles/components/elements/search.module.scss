@@ -1,47 +1,294 @@
-.search {
-	background-color: #F1F5F9;
-	padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@media (min-width: 1024px) and (max-width: 1600px) {
+	.search {
+		background-color: #F1F5F9;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+
+		input {
+			border-radius: 20px;
+			background: #f5f5f5;
+			outline: none;
+			text-indent: 15px;
+			width: calc(100% - 80px);
+			font-size: 16px;
+			letter-spacing: -0.2px;
+			border: 2px solid #f5f5f5;
+			background: #fff;
+			height: 46px;
+			border-radius: 23px 0px 0px 23px;
+			border: 2px solid #93bded;
+			font-size: clamp(10px, 3.4vw, 16px);
+			font-family: 'Inter', sans-serif !important;
+		}
+
+		button {
+			font-family: 'Inter', sans-serif !important;
+			position: absolute;
+			font-size: clamp(12px, 3.4vw, 16px);
+			right: 1px;
+			width: 80px;
+			height: 46px;
+			border: none;
+			background-color: #74b0f5;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			color: white;
+			margin-left: 5px;
+			margin-right: 20px;
+			font-weight: 600;
+			letter-spacing: 1.1px;
+		}
+
+		.path {
+			display: flex;
+			margin-top: 10px;
+			overflow-x: scroll;
+			flex-wrap: nowrap;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
 
 
-	input {
+			.item {
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				flex-wrap: nowrap;
+				font-family: 'Inter', sans-serif !important;
+				white-space: nowrap;
+				font-weight: 400;
+				font-size: clamp(12px, 3.6vw, 16px);
+				
 
-		
-		border-radius: 20px;
+			}
 
-		background: #f5f5f5;
-		outline: none;
-		text-indent: 15px;
-		width: calc(100% - 80px);
-		font-size: 16px;
-		letter-spacing: -.2px;
-		border: 2px solid #f5f5f5;
+			// &:nth-child(3n) .item{
+			// 	background: #f4eddf; /* Цвет фона */
+			// 	padding: 10px; /* Поля вокруг текста */
+			// 	white-space: nowrap; /* Текст не переносится */
+			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
+			// 	text-overflow: ellipsis;
+			// }
 
-
-		background: #fff;
-		height: 46px;
-		border-radius: 23px 0px 0px 23px;
-		border: 2px solid #93bded;
-		font-size: 16px;
+			.item::after {
+				left: 5px;
+				position: relative;
+				content: '\2192';
+				top: -2px;
+			}
+		}
 
 	}
+}
 
-	button {
+@media (min-width: 768px) and (max-width: 1023px) {
+	.search {
+		background-color: #F1F5F9;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
 
-		position: absolute;
-		font-size: 20px;
+		input {
+			border-radius: 20px;
+			background: #f5f5f5;
+			outline: none;
+			text-indent: 15px;
+			width: calc(100% - 80px);
+			font-size: 16px;
+			letter-spacing: -0.2px;
+			border: 2px solid #f5f5f5;
+			background: #fff;
+			height: 46px;
+			border-radius: 23px 0px 0px 23px;
+			border: 2px solid #93bded;
+			font-size: clamp(10px, 3.4vw, 16px);
+			font-family: 'Inter', sans-serif !important;
+		}
 
-		right: 0px;
-		width: 80px;
-		height: 46px;
-		border: none;
-		background-color: #93bded;
-		border-radius: 0 5px 5px 0;
-		cursor: pointer;
-		color: white;
-		margin-left: 5px;
-		margin-right: 20px;
+		button {
+			font-family: 'Inter', sans-serif !important;
+			position: absolute;
+			font-size: clamp(12px, 3.4vw, 16px);
+			right: 1px;
+			width: 80px;
+			height: 46px;
+			border: none;
+			background-color: #74b0f5;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			color: white;
+			margin-left: 5px;
+			margin-right: 20px;
+			font-weight: 600;
+			letter-spacing: 1.1px;
+		}
+
+		.path {
+			display: flex;
+			margin-top: 10px;
+			overflow-x: scroll;
+			flex-wrap: nowrap;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+
+
+			.item {
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				flex-wrap: nowrap;
+				font-family: 'Inter', sans-serif !important;
+				white-space: nowrap;
+				font-weight: 400;
+				font-size: clamp(12px, 3.6vw, 16px);
+				
+
+			}
+
+			// &:nth-child(3n) .item{
+			// 	background: #f4eddf; /* Цвет фона */
+			// 	padding: 10px; /* Поля вокруг текста */
+			// 	white-space: nowrap; /* Текст не переносится */
+			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
+			// 	text-overflow: ellipsis;
+			// }
+
+			.item::after {
+				left: 5px;
+				position: relative;
+				content: '\2192';
+				top: -2px;
+			}
+		}
 
 	}
+}
+
+@media (max-width: 767px) {
+	.search {
+		background-color: #F1F5F9;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+
+		input {
+			border-radius: 20px;
+			background: #f5f5f5;
+			outline: none;
+			text-indent: 15px;
+			width: calc(100% - 80px);
+			font-size: 16px;
+			letter-spacing: -0.2px;
+			border: 2px solid #f5f5f5;
+			background: #fff;
+			height: 46px;
+			border-radius: 23px 0px 0px 23px;
+			border: 2px solid #93bded;
+			font-size: clamp(10px, 3.4vw, 16px);
+			font-family: 'Inter', sans-serif !important;
+		}
+
+		button {
+			font-family: 'Inter', sans-serif !important;
+			position: absolute;
+			font-size: clamp(12px, 3.4vw, 16px);
+			right: 1px;
+			width: 80px;
+			height: 46px;
+			border: none;
+			background-color: #74b0f5;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			color: white;
+			margin-left: 5px;
+			margin-right: 20px;
+			font-weight: 600;
+			letter-spacing: 1.1px;
+		}
+
+		.path {
+			display: flex;
+			margin-top: 10px;
+			overflow-x: scroll;
+			flex-wrap: nowrap;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
 
 
+			.item {
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				display: flex;
+				flex-direction: row;
+				border-radius: 13px;
+				padding: 6px 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				background: #fafafa;
+				transition: all 0.2s;
+				border: 2px solid #fafafa;
+				flex-wrap: nowrap;
+				font-family: 'Inter', sans-serif !important;
+				white-space: nowrap;
+				font-weight: 400;
+				font-size: clamp(12px, 3.6vw, 16px);
+				
+
+			}
+
+			// &:nth-child(3n) .item{
+			// 	background: #f4eddf; /* Цвет фона */
+			// 	padding: 10px; /* Поля вокруг текста */
+			// 	white-space: nowrap; /* Текст не переносится */
+			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
+			// 	text-overflow: ellipsis;
+			// }
+
+			.item::after {
+				left: 5px;
+				position: relative;
+				content: '\2192';
+				top: -2px;
+			}
+		}
+
+	}
 }
