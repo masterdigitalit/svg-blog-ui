@@ -3,7 +3,7 @@
 	.header {
 		background-color: #ffffff00;
 		-webkit-backdrop-filter: blur(12px);
-		backdrop-filter: blur(8px);
+		backdrop-filter: blur(17px);
 
 
 
@@ -44,10 +44,10 @@
 		display: flex;
 		align-items: center;
 
-		>.buttons {
+		.buttons {
 			display: flex;
 
-			>.button {
+			.button {
 				font-size: 19px;
 				display: flex;
 				margin-right: 12px;
@@ -106,7 +106,7 @@
 	.header {
 		background-color: #ffffff00;
 		-webkit-backdrop-filter: blur(12px);
-		backdrop-filter: blur(8px);
+		backdrop-filter: blur(17px);
 
 
 
@@ -147,16 +147,17 @@
 		display: flex;
 		align-items: center;
 
-		>.buttons {
+		.buttons {
 			display: flex;
 
-			>.button {
+			.button {
 				font-size: 19px;
 				display: flex;
 				margin-right: 12px;
 			}
 		}
 	}
+
 
 
 
@@ -203,7 +204,7 @@
 	.header {
 		background-color: #ffffff00;
 		-webkit-backdrop-filter: blur(12px);
-		backdrop-filter: blur(14px);
+		backdrop-filter: blur(17px);
 		background-color: #ffffff49;
 
 

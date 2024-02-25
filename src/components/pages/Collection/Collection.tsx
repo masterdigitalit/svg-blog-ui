@@ -55,7 +55,7 @@ const Collection: FC = ({}) => {
 					<div className={style.items}>
 						{Icons.map((el) => (
 							<div className={style.item}>
-								<img src={`http://192.168.1.3:9999/static/${el.svg}`} alt="" />
+								<img src={`https://svg-blog-server.onrender.com/static/${el.svg}`} alt="" />
 								<div className={style.action}>
 									<svg
 										width="21"
@@ -72,7 +72,7 @@ const Collection: FC = ({}) => {
 									<svg
 										onClick={(els) => [
 											Download({
-												path: `http://192.168.1.3:9999/static/${el.svg}`,
+												path: `https://svg-blog-server.onrender.com/static/${el.svg}`,
 												title: el.title,
 											}),
 											els.preventDefault(),
