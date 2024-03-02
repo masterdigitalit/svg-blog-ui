@@ -74,7 +74,7 @@ const Icon: FC = ({}) => {
 								height="18"
 								viewBox="0 0 24 24"
 								fill="none"
-								stroke="#fff"
+								stroke="#000"
 								stroke-width="3"
 								stroke-linecap="round"
 							>
@@ -83,6 +83,7 @@ const Icon: FC = ({}) => {
 							сохранить
 						</div>
 						<div className={style["download"]}>
+							<div className={style.title}>
 							{" "}
 							<svg
 								width="18"
@@ -97,7 +98,10 @@ const Icon: FC = ({}) => {
 							</svg>{" "}
 							скачать
 						</div>
-					</div>
+						<div className={style.open}><svg height="18" width="18" viewBox="0 0 24 24" stroke="#fff" fill="none" transform="rotate(90)" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs" ><path d="M9 18l6-6-6-6"></path></svg></div>
+
+						</div>
+											</div>
 					<div className={style.image}>
 						<img
 							src={`http://192.168.1.5:9999/static/${Icon?.svg}`}
