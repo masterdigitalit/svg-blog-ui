@@ -94,6 +94,8 @@
 
 			a{
 				width: 100%;
+				display: flex;
+				justify-content: center;
 			}
 
 			.item {
@@ -103,10 +105,12 @@
 				flex-wrap: wrap;
 				flex-direction: column;
 				align-content: center;
+				align-items: center;
 
 
 
 				img {
+					display: flex;
 					padding: 10px;
 					width: 80%;
 					box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .05);
@@ -149,6 +153,8 @@
 
 			a{
 				width: 100%;
+				display: flex;
+				justify-content: center;
 			}
 
 			.item {
@@ -158,10 +164,12 @@
 				flex-wrap: wrap;
 				flex-direction: column;
 				align-content: center;
+				align-items: center;
 
 
 
 				img {
+					display: flex;
 					padding: 10px;
 					width: 80%;
 					box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .05);

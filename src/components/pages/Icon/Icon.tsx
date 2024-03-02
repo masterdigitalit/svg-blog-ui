@@ -18,6 +18,8 @@ type IIcons = {
 
 const Icon: FC = ({}) => {
 	const [Loading, setLoading] = useState<boolean>(true);
+	const [showDownload, setshowDownload] = useState<boolean>(false);
+
 	const [Icon, setIcon] = useState<IIcons>();
 	const { url } = useParams();
 
@@ -83,25 +85,49 @@ const Icon: FC = ({}) => {
 							сохранить
 						</div>
 						<div className={style["download"]}>
-							<div className={style.title}>
-							{" "}
-							<svg
-								width="18"
-								height="18"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#fff"
-								stroke-width="3"
-								stroke-linecap="round"
-							>
-								<path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"></path>
-							</svg>{" "}
-							скачать
+							<div className={style.button}>
+								<div className={style.title}>
+									{" "}
+									<svg
+										width="18"
+										height="18"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="#fff"
+										stroke-width="3"
+										stroke-linecap="round"
+									>
+										<path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"></path>
+									</svg>{" "}
+									скачать
+								</div>
+								<hr></hr>
+								<div className={style.open}>
+									<svg
+										onClick={() => {
+											setshowDownload(!showDownload);
+										}}
+										height="18"
+										width="18"
+										viewBox="0 0 24 24"
+										stroke="#fff"
+										fill="none"
+										transform="rotate(90)"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="arcs"
+									>
+										<path d="M9 18l6-6-6-6"></path>
+									</svg>
+								</div>
+							</div>
+							{showDownload && (
+								<>
+									<div className={style["download-params"]}></div>
+								</>
+							)}
 						</div>
-						<div className={style.open}><svg height="18" width="18" viewBox="0 0 24 24" stroke="#fff" fill="none" transform="rotate(90)" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs" ><path d="M9 18l6-6-6-6"></path></svg></div>
-
-						</div>
-											</div>
+					</div>
 					<div className={style.image}>
 						<img
 							src={` https://svg-blog-server.onrender.com/static/${Icon?.svg}`}
