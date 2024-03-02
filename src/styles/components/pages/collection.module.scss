@@ -36,6 +36,9 @@
 			grid-template-columns: repeat(6, calc(16.6% - 8.3px));
 			column-gap: 10px;
 			row-gap: 15px;
+			a{
+				width: 100%;
+			}
 
 
 			.item {
@@ -89,6 +92,9 @@
 			column-gap: 10px;
 			row-gap: 15px;
 
+			a{
+				width: 100%;
+			}
 
 			.item {
 				display: flex;
@@ -141,6 +147,9 @@
 			column-gap: 10px;
 			row-gap: 15px;
 
+			a{
+				width: 100%;
+			}
 
 			.item {
 				display: flex;

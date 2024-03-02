@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import style from "../../../styles/components/pages/collection.module.scss";
+import style from "../../../styles/components/pages/author.module.scss";
 import axios from "../../../api/axios";
 import { Download } from "../../../scripts/Download";
 import Skeleton from "react-loading-skeleton";
@@ -13,7 +13,7 @@ type IIcons = {
 	svg: string;
 };
 
-const Collection: FC = ({}) => {
+const Author: FC = ({}) => {
 	const [Loading, setLoading] = useState<boolean>(true);
 	const [Icons, setIcons] = useState<IIcons[]>([]);
 	const { url } = useParams();
@@ -105,4 +105,4 @@ const Collection: FC = ({}) => {
 	);
 };
 
-export default Collection;
+export default Author;

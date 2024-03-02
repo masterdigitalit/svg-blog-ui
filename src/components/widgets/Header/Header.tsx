@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import style from "../../styles/components/widgets/header.module.scss";
+import style from "../../../styles/components/widgets/header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header: FC = () => {

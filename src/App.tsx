@@ -1,10 +1,12 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/widgets/Header";
+import Header from "./components/widgets/Header/Header";
 import Home from "./components/pages/Home/Home";
 import "./App.css";
-import Search from "./components/elements/Search";
+import Search from "./components/elements/Search/Search";
 import CollectionRouter from "./routers/Collection.router";
+import AuthorRouter from "./routers/Author.router";
+import IconRouter from "./routers/Icon.router";
 
 function App() {
 	return (
@@ -13,6 +15,14 @@ function App() {
 				<Header />
 				<Search />
 			</CollectionRouter>
+			<AuthorRouter>
+				<Header />
+				<Search />
+			</AuthorRouter>
+			<IconRouter>
+				<Header />
+				<Search />
+			</IconRouter>
 			<Routes>
 				{/* <Route path="/camera" element={ <><Camera /></> } /> */}
 
