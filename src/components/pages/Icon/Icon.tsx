@@ -104,7 +104,7 @@ const Icon: FC = ({}) => {
 											</div>
 					<div className={style.image}>
 						<img
-							src={`http://192.168.1.5:9999/static/${Icon?.svg}`}
+							src={` https://svg-blog-server.onrender.com/static/${Icon?.svg}`}
 							loading="eager"
 							alt=""
 						/>
